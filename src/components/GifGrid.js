@@ -10,7 +10,7 @@ const GifGrid = ({ category }) => {
    const imgs = data.map((img) => <GifGridItem key={img.id} {...img} />);
    return (
       <div>
-         <h3 className='animate__animated animate__bounce'>{category}</h3>
+         <h3>{category}</h3>
          {loading && <p>Aguanta, capo.</p>}
          <div className='card-grid '>{imgs}</div>
       </div>
